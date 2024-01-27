@@ -1,10 +1,5 @@
 import axios from "axios";
 
-export const getTodos = async (page: any) => {
-  const response = await axios.get(`http://127.0.0.1:8000/todo/?${page}`);
-  return response.data;
-};
-
 export const getTodoViaEndpoint = async (endpoint: any) => {
   const response = await axios.get(endpoint);
   return response.data;
